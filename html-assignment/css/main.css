@@ -1,0 +1,11 @@
+/* Converts all body text to Verdana 18px */
+body{
+    font-size: 18px;
+    font-family: Verdana;
+}
+
+/* Adds midnight blue background and orange font for header and footer */
+header, footer{
+    background-color: midnightblue;
+    color: orange;
+}
