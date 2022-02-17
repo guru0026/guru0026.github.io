@@ -29,3 +29,17 @@ header, footer{
 #hobby-list li:nth-child(odd) {
     background-color: #fae6c8;
 }
+
+body a:link, a:visited {
+    text-decoration: none;
+    color: orange;
+    background-color: midnightblue;
+}
+
+body a:hover {
+    background-color: #BFD8FF;
+}
+
+body a:active {
+    background-color: orange;
+}
