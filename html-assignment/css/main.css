@@ -19,3 +19,8 @@ header, footer{
 #my-image{
     box-shadow: 0px 0px 2px 1px black;
 }
+
+/* Adds square-shaped bullets to list of hobbies*/
+#hobby-list{
+    list-style-type: square;
+}
