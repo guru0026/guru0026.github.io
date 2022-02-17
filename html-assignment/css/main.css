@@ -25,7 +25,7 @@ header, footer{
     list-style-type: square;
 }
 
-/* Adds cream background to odd list-items under hobbies*/
+/* Adds cream background to odd list-items under hobbies and notes*/
 #hobby-list li:nth-child(odd) {
     background-color: #fae6c8;
 }
