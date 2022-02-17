@@ -4,8 +4,13 @@ body{
     font-family: Verdana;
 }
 
-/* Adds midnight blue background and orange font for header and footer */
+/* Adds midnight blue background for header and footer */
 header, footer{
     background-color: midnightblue;
+    color: white;
+}
+
+/* Adds orange font for site-title <h1>*/
+.site-title{
     color: orange;
 }
