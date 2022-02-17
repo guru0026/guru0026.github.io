@@ -31,15 +31,21 @@ header, footer{
 }
 
 body a:link, a:visited {
+    background-color: white;
+    color: midnightblue;
+    border: 2px solid midnightblue;
+    padding:5px 10px;
+    text-align: center;
     text-decoration: none;
-    color: orange;
-    background-color: midnightblue;
-}
+    display: inline-block;
+  }
 
-body a:hover {
-    background-color: #BFD8FF;
-}
+body a:hover, a:active {
+    background-color: midnightblue;
+    color: orange
+  }
 
 body a:active {
-    background-color: orange;
+    background-color: #BFD8FF;
+    ;
 }
