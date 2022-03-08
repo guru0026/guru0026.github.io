@@ -1,3 +1,13 @@
+header {
+    background-image: url("../images/rock_02.jpg");
+}
+
+header h1{
+    z-index: 9;
+}
+
 body {
     background-color: rgb(174, 221, 211);
+    font-family: Arial, Helvetica, sans-serif
 }
+
