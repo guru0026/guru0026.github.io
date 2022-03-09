@@ -1,15 +1,14 @@
 html{
-    box-sizing: border-box;
-}
-*,
-*:before,
-*:after{
-    box-sizing: inherit;
+    margin: 0px;
+    
 }
 
 header {
     background-image: url("../images/rock_01.jpg");
     background-size: cover;
+    top: 0px;
+    width: 1001px;
+    height: 370px;
 }
 
 header h1{
@@ -19,20 +18,33 @@ header h1{
     font-weight: 500;
     text-align: center;
     padding-top: 15rem;
-    padding-bottom: 4rem;
 }
 
-nav li {
-    display: inline;
-    text-transform: uppercase;
+a:link, a:visited {
+    text-decoration: none;
     color: black;
-    font-size: 1.2rem;
-    padding-inline: 12.5%;
+}
+nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding-inline: 115px;
+    padding-bottom: .5rem;
+    border-right: 1px solid black;
 }
 
-h2, h3, h4 {
+h2, h3 {
     font-weight: 500;
     line-height: 0.5rem;
+    padding-top: 0.75rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
 }
 
 body {
@@ -47,35 +59,50 @@ main {
 
 img {
     width: 250px;
-    /* apply float */
     float: left;
 }
 
 .wrapper {
-    width: 1000px;
+    width: 1001px;
     display: block;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit; 
 }
 
 .message-box {
     border: 1px solid black;
+    padding: 1.6rem 1rem 1rem 1rem;
+    line-height: 1.5rem;
+}
+
+input[type=text] {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 4rem;
 }
 
 div {
     background-color: rgb(220, 235, 235);
 }
 
-body a:link, a:visited {
+section a:link, a:visited {
     font-size: 0.5em;
-    color: rgb(0, 0, 0);
     border: 1px solid rgb(0, 0, 0);
     padding: 7px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
-  }
+}
+
 
 footer {
     text-align: right;
