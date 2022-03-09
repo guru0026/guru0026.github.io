@@ -1,8 +1,3 @@
-html{
-    margin: 0px;
-    
-}
-
 .wrapper {
     background-color: rgb(220, 235, 235);
     width: 801px;
@@ -10,6 +5,7 @@ html{
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1rem;
     box-sizing: border-box;
 }
 *,
@@ -32,7 +28,7 @@ header h1{
     font-size: 3rem;
     font-weight: 500;
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 3.3em;
 }
 
 a:link, a:visited {
@@ -43,8 +39,9 @@ a:link, a:visited {
     display: inline-block;
     text-transform: uppercase;
     font-size: 1.2rem;
-    padding-inline: 90px;
-    padding-bottom: .5rem;
+    padding-inline: 96px;
+    padding-top: .3em;
+    padding-bottom: .5em;
 }
 
 .l-button {
@@ -54,7 +51,8 @@ a:link, a:visited {
 h2, h3 {
     font-weight: 500;
     line-height: 0.5rem;
-    padding-top: 0.75rem;
+    padding-top: 1.2em;
+    padding-bottom: 0.75em;
 }
 
 h2 {
@@ -73,7 +71,7 @@ body {
 }
 
 main {
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 img {
@@ -81,10 +79,17 @@ img {
     float: left;
 }
 
+.bullets {
+    line-height:0.75rem;
+    list-style-type:disc;
+    list-style-position: inside;
+}
+
 .message-box {
+    font-size: 0.85rem;
     border: 1px solid black;
-    padding: 1.6rem 1rem 1rem 1rem;
-    line-height: 1.5rem;
+    padding: 1.6em 1em 1em 1em;
+    line-height: 1.5em;
 }
 
 input[type=text] {
@@ -99,13 +104,15 @@ textarea {
 
 .message-box p {
     font-size: 1rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 section a:link, a:visited {
     font-size: 0.5rem;
     line-height: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
-    padding: 7px;
+    padding: 0.6em ;
     text-align: center;
     display: inline-block;
     margin-top: 0.5rem;
@@ -114,6 +121,6 @@ section a:link, a:visited {
 
 footer {
     text-align: right;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     padding: 1rem;
 }
