@@ -1,3 +1,34 @@
+/* specifies background color, font style and default font size for entire page */
+body {
+    background-color: rgb(174, 221, 211);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 0.75rem;
+}
+
+/* aligns header to center of page; specifies header size, uses background image for header space */
+header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/rock_01.jpg"); 
+    background-size:contain;
+    top: 0px;
+    width: 801px;
+    height: 267px;
+}
+
+/* stacks header text above background image, header font specifications */
+.site-title {
+    z-index: 9;
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 3.3em;
+}
+
+/* visually groups and contains all elements within this class through common alignment and spacing */
 .wrapper {
     background-color: rgb(220, 235, 235);
     width: 801px;
@@ -8,36 +39,14 @@
     box-sizing: border-box;
     padding: 0.5rem 0.5rem 0rem 0.5rem;
 }
-*,
-*:before,
-*:after{
-    box-sizing: inherit; 
-}
 
-header {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("../images/rock_01.jpg");
-    background-size:contain;
-    top: 0px;
-    width: 801px;
-    height: 267px;
-}
-
-header h1{
-    z-index: 9;
-    color: white;
-    font-size: 3rem;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 3.3em;
-}
-
+/* removes underline from hyperlinks and changes font colors to black */
 a:link, a:visited {
     text-decoration: none;
     color: black;
 }
+
+/* stacks navigation links horizontally and spaces them evenly */
 #nav-buttons li {
     display: inline-block;
     text-transform: uppercase;
@@ -46,10 +55,12 @@ a:link, a:visited {
     padding-bottom: .5em;
 }
 
+/* provides vertical dividers between navigation links */
 .l-button {
     border-right: 1px solid black;
 }
 
+/* specifies lineweight, spacing ratios of heading fonts in main content */
 h2, h3 {
     font-weight: 500;
     line-height: 0.5rem;
@@ -65,35 +76,32 @@ h3 {
     font-size: 1.2rem;
 }
 
-body {
-    background-color: rgb(174, 221, 211);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 0.75rem;
-}
-
 main {
     line-height: 1.4;
 }
 
+/* 'floats' or pushes image of Patrick to the left, forcing adjacent text to go to the right */
 img {
     width: 200px;
     float: left;
     padding: 0.2rem 0.8rem 0.8rem 0rem;
 }
 
+/* ensures that content from sections below don't wrap around floating image of Patrick even if the content text is short */
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
 }
 
+/* Specifies line spacing, bullet-point shape and alignment for list */
 .bullets {
     line-height:0.75rem;
     list-style-type:disc;
     list-style-position: inside;
 }
 
+/* creates box around info and message input area with spacing */
 .message-box {
     font-size: 0.85rem;
     border: 1px solid black;
@@ -101,22 +109,26 @@ img {
     line-height: 1.5em;
 }
 
+/* extends width of information text input fields till extents of box */
 input[type=text] {
     width: 100%;
     margin-bottom: 0.7rem;
 }
 
+/* extends width of message input box till extents of box, increases its height */
 textarea {
     width: 100%;
     height: 5rem;
 }
 
+/* changes font-size of question inside 'contact box' */
 .message-box p {
     font-size: 1rem;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
+/* modifies 'send' link appearance so that it looks like a button */
 section a:link, a:visited {
     font-size: 0.5rem;
     line-height: 0.9rem;
@@ -127,7 +139,7 @@ section a:link, a:visited {
     margin-top: 0.5rem;
 }
 
-
+/* aligns copyright text to right and specifies its size and spacing */
 footer {
     text-align: right;
     font-size: 0.7rem;
