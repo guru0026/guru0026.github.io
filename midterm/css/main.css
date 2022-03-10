@@ -2,11 +2,11 @@
     background-color: rgb(220, 235, 235);
     width: 801px;
     display: block;
-    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
     box-sizing: border-box;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
 }
 *,
 *:before,
@@ -15,6 +15,9 @@
 }
 
 header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url("../images/rock_01.jpg");
     background-size:contain;
     top: 0px;
@@ -39,8 +42,7 @@ a:link, a:visited {
     display: inline-block;
     text-transform: uppercase;
     font-size: 1.2rem;
-    padding-inline: 96px;
-    padding-top: .3em;
+    padding-inline: 93px;
     padding-bottom: .5em;
 }
 
@@ -77,6 +79,13 @@ main {
 img {
     width: 200px;
     float: left;
+    padding: 0.2rem 0.8rem 0.8rem 0rem;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .bullets {
@@ -122,5 +131,5 @@ section a:link, a:visited {
 footer {
     text-align: right;
     font-size: 0.7rem;
-    padding: 1rem;
+    padding: 1.1rem;
 }
