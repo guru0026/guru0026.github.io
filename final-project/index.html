@@ -6,37 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title of page; visible on tab -->
     <title>MTM6130 Final Project - guru0026</title>
+    <script src="https://kit.fontawesome.com/16c6523511.js" crossorigin="anonymous"></script>
     <!-- resets style of page; overrides default browser style variants -->
     <link href="css/reset.css" rel="stylesheet">
     <!-- links html to a css file for visual style specifications -->
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper wrapper-1">
-        <header>
-            <h1 class="site-title">Welcome to Three Star Media</h1>
-            <img src="images/main-banner.jpg" alt="banner">
-        </header>
-        <nav>
-            <img src="images/logo.png" alt="nav-logo">
-            <ul id="nav-buttons">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="wrapper wrapper-2">
+    <header>
+        <h1 class="site-title">Welcome to Three Star Media</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nisi soluta ullam animi consequatur, iste quam debitis? Quos ducimus hic eos, voluptates aperiam aut mollitia odio ullam? Temporibus, dolor ullam.</p>
+        <img src="images/main-banner.jpg" alt="banner">
+        <a href="#">Connect with us</a>
+    </header>
+    <nav>
+        <img src="images/logo.png" alt="nav-logo">
+        <ul id="nav-buttons">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <input id="search" type="text" placeholder="Search">
+    <main class="wrapper wrapper-1">
+        <h2>About Us</h2>
+        <img src="images/about-us.jpg" alt="about us">
+    </main>
+    <section class="wrapper wrapper-2">
         <h2>Our Services</h2>
-    </div>
-    <div class="wrapper wrapper-3">
+        <div class="block block-1">
+            <img src="images/digital.jpg" alt="digital">
+            <h3>Digital Transformation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
+            <a class="large-caret" href="#">Digital Plans</a>
+        </div>
+        <div class="block block-2">
+            <img src="images/marketing.jpg" alt="marketing">
+            <h3>Marketing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
+            <a class="large-caret" href="#">Marketing Plans</a>
+        </div>
+        <div class="block block-3">
+            <img src="images/video.jpg" alt="video">
+            <h3>Video Production</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
+            <a class="large-caret" href="#">Video Plans</a>
+        </div>
+        <div class="block block-4">
+            <img src="images/web.jpg" alt="web">
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
+            <a class="large-caret" href="#">Web Plans</a>
+        </div>
+        <div class="block block-5">
+            <img src="images/print.jpg" alt="print">
+            <h3>Print</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
+            <a class="large-caret" href="#">Print Plans</a>
+        </div>
+    </section>
+    <section class="wrapper wrapper-3">
         <h3>Our Vision</h3>
-    </div>
-    <div class="wrapper wrapper-4">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, numquam delectus in corrupti rem optio minus ad tenetur ipsa unde aliquam inventore, labore esse nobis incidunt ducimus doloribus odit quae!</p>
+        <a class="large-caret" href="#">Print Plans</a>
+    </section>
+    <section class="wrapper wrapper-4">
         <h2>Our Team</h2>
-    </div>
-    
+        <div class="team team-1">
+            <img src="images/john.jpg" alt="John">    
+        </div>
+        <div class="team team-2">
+            <h3>John Doe</h3>
+            <p>CEO and Co-owner</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quod eos fugit maxime doloribus, consequuntur, dicta eaque, eveniet officia quam molestiae nisi voluptas voluptatibus earum tempore blanditiis tempora excepturi temporibus.</p>
+        </div>
+        <div class="team team-3">
+            <img src="images/bob.jpg" alt="Bob">       
+        </div>
+        <div class="team team-4">
+            <h3>Bob Rite</h3>
+            <h4>CFO and Co-owner</h4>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quod eos fugit maxime doloribus, consequuntur, dicta eaque, eveniet officia quam molestiae nisi voluptas voluptatibus earum tempore blanditiis tempora excepturi temporibus.</p>
+        </div>
+    </section>
+    <section class="wrapper wrapper-5">
+        <h2>Contact Us</h2>
+        <h3>Send us a message</h3>
+        <div class="message-box">
+            <!-- info and message input fields -->
+            <label for="fullname">Full Name</label><br>
+            <input type="text" id="fullname" name="fullname"><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message"></textarea>
+        </div>
+        <div class="button">
+            <!-- send link which will be converted to button on css -->
+            <a href="#">SEND</a>
+        </div>
+        <h3>Hours of operation</h3>
+        <table style="width:100%">
+            <tr>
+                <th>Days</th>
+                <th>Hours</th>
+            </tr>
+            <tr>
+                <td>Monday-Friday</td>
+                <td>9 AM - 6 AM</td>
+            </tr>
+            <tr>
+                <td>Saturday-Sunday</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+        <h3>Location</h3>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11215.031376118053!2d-75.75311301064566!3d45.353700291910705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1649259637203!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer>
+         <!-- copyright information -->
+         <p><span>&copy;</span> Copyright Three Star Media, 2020</p>
+         <p>All images are taken from <a href="#">Unsplash</a></p>
+    </footer>
 </body>
 </html>
