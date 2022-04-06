@@ -8,17 +8,11 @@
     <title>MTM6130 Final Project - guru0026</title>
     <script src="https://kit.fontawesome.com/16c6523511.js" crossorigin="anonymous"></script>
     <!-- resets style of page; overrides default browser style variants -->
-    <link href="css/reset.css" rel="stylesheet">
+    <!-- <link href="css/reset.css" rel="stylesheet"> -->
     <!-- links html to a css file for visual style specifications -->
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1 class="site-title">Welcome to Three Star Media</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nisi soluta ullam animi consequatur, iste quam debitis? Quos ducimus hic eos, voluptates aperiam aut mollitia odio ullam? Temporibus, dolor ullam.</p>
-        <img src="images/main-banner.jpg" alt="banner">
-        <a href="#">Connect with us</a>
-    </header>
     <nav>
         <img src="images/logo.png" alt="nav-logo">
         <ul id="nav-buttons">
@@ -28,8 +22,17 @@
             <li><a href="#">Team</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+        <input id="search" type="text" placeholder="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
     </nav>
-    <input id="search" type="text" placeholder="Search">
+    <header>
+        <img class="bg-image" src="images/main-banner.jpg" alt="banner">
+        <div class="main-text-overlay">
+            <h1 class="site-title">Welcome to Three Star Media</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nisi soluta ullam animi consequatur, iste quam debitis? Quos ducimus hic eos, voluptates aperiam aut mollitia odio ullam? Temporibus, dolor ullam.</p>
+            <a class="mid-caret" href="#">Connect with us <i class="fa-solid fa-caret-right"></i></a>
+        </div>
+    </header>
     <main class="wrapper wrapper-1">
         <h2>About Us</h2>
         <img src="images/about-us.jpg" alt="about us">
@@ -40,37 +43,36 @@
             <img src="images/digital.jpg" alt="digital">
             <h3>Digital Transformation</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
-            <a class="large-caret" href="#">Digital Plans</a>
+            <a class="large-caret" href="#">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
         </div>
         <div class="block block-2">
             <img src="images/marketing.jpg" alt="marketing">
             <h3>Marketing</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
-            <a class="large-caret" href="#">Marketing Plans</a>
+            <a class="large-caret" href="#">Marketing Plans <i class="fa-solid fa-caret-right"></i></a>
         </div>
         <div class="block block-3">
             <img src="images/video.jpg" alt="video">
             <h3>Video Production</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
-            <a class="large-caret" href="#">Video Plans</a>
+            <a class="large-caret" href="#">Video Plans <i class="fa-solid fa-caret-right"></i></a>
         </div>
         <div class="block block-4">
             <img src="images/web.jpg" alt="web">
             <h3>Web Development</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
-            <a class="large-caret" href="#">Web Plans</a>
+            <a class="large-caret" href="#">Web Plans <i class="fa-solid fa-caret-right"></i></a>
         </div>
-        <div class="block block-5">
             <img src="images/print.jpg" alt="print">
             <h3>Print</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
-            <a class="large-caret" href="#">Print Plans</a>
+            <a class="large-caret" href="#">Print Plans <i class="fa-solid fa-caret-right"></i></a>
         </div>
     </section>
     <section class="wrapper wrapper-3">
         <h3>Our Vision</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, numquam delectus in corrupti rem optio minus ad tenetur ipsa unde aliquam inventore, labore esse nobis incidunt ducimus doloribus odit quae!</p>
-        <a class="large-caret" href="#">Print Plans</a>
+        <a class="mid-caret" href="#">Learn More <i class="fa-solid fa-caret-right"></i></a>
     </section>
     <section class="wrapper wrapper-4">
         <h2>Our Team</h2>
@@ -84,7 +86,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quod eos fugit maxime doloribus, consequuntur, dicta eaque, eveniet officia quam molestiae nisi voluptas voluptatibus earum tempore blanditiis tempora excepturi temporibus.</p>
         </div>
         <div class="team team-3">
-            <img src="images/bob.jpg" alt="Bob">       
+            <img src="images/bob.jpg" alt="Bob">      
         </div>
         <div class="team team-4">
             <h3>Bob Rite</h3>
