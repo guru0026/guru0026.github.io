@@ -7,67 +7,75 @@
     <!-- title of page; visible on tab -->
     <title>MTM6130 Final Project - guru0026</title>
     <script src="https://kit.fontawesome.com/16c6523511.js" crossorigin="anonymous"></script>
-    <!-- resets style of page; overrides default browser style variants -->
-    <!-- <link href="css/reset.css" rel="stylesheet"> -->
     <!-- links html to a css file for visual style specifications -->
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <!--  -->
+        <!-- navigation links with unique id for "Home" for different aesthetic treatment on css-->
         <img src="images/logo.png" alt="nav-logo">
         <ul id="nav-buttons">
-            <li><a href="#">Home</a></li>
+            <li id="home-button"><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Team</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+        <!-- search bar with icon -->
         <input id="search" type="text" placeholder="Search">
         <i class="fa-solid fa-magnifying-glass"></i>
     </nav>
     <header>
         <img class="bg-image" src="images/main-banner.jpg" alt="banner">
+        <!-- class to isolate header text for easy formatting on css: alignment, z-value, etc. -->
         <div class="main-text-overlay">
             <h1 class="site-title">Welcome to Three Star Media</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nisi soluta ullam animi consequatur, iste quam debitis? Quos ducimus hic eos, voluptates aperiam aut mollitia odio ullam? Temporibus, dolor ullam.</p>
+            <!-- "connect with us" link which will be converted to button on css -->
             <a class="mid-caret" href="#">Connect with us <i class="fa-solid fa-caret-right"></i></a>
         </div>
     </header>
+    <!-- "wrapper" class allows for easy visual alignment of sections with common traits. Sub-classes allow for individual editing for sections with unique features -->
     <main class="wrapper wrapper-1">
         <h2>About Us</h2>
         <img src="images/about-us.jpg" alt="about us">
     </main>
+    <!-- sections provided for grouping sets of text and images to be aligned using grid function on css. These alignments will change based on screen size -->
     <section class="wrapper wrapper-2">
         <h2>Our Services</h2>
         <div class="block block-1">
             <img src="images/digital.jpg" alt="digital">
             <h3>Digital Transformation</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
+            <!-- "digital plans" link which will be converted to button on css -->
             <a class="large-caret" href="#">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
         </div>
         <div class="block block-2">
             <img src="images/marketing.jpg" alt="marketing">
             <h3>Marketing</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
+            <!-- "marketing plans" link which will be converted to button on css -->
             <a class="large-caret" href="#">Marketing Plans <i class="fa-solid fa-caret-right"></i></a>
         </div>
         <div class="block block-3">
             <img src="images/video.jpg" alt="video">
             <h3>Video Production</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
+            <!-- "video plans" link which will be converted to button on css -->
             <a class="large-caret" href="#">Video Plans <i class="fa-solid fa-caret-right"></i></a>
         </div>
         <div class="block block-4">
             <img src="images/web.jpg" alt="web">
             <h3>Web Development</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
+            <!-- "web plans" link which will be converted to button on css -->
             <a class="large-caret" href="#">Web Plans <i class="fa-solid fa-caret-right"></i></a>
         </div>
         <div>
             <img src="images/print.jpg" alt="print">
             <h3>Print</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci eligendi quae qui, numquam aperiam commodi vel voluptatem nihil eveniet nostrum eum, obcaecati minus tempore nam consequuntur impedit, voluptate iure?</p>
+            <!-- "print plans" link which will be converted to button on css -->
             <a class="large-caret" href="#">Print Plans <i class="fa-solid fa-caret-right"></i></a>
         </div>
     </section>
@@ -75,10 +83,12 @@
         <img src="images/vision.jpg" alt="vision">
         <h3>Our Vision</h3> 
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, numquam delectus in corrupti rem optio minus ad tenetur ipsa unde aliquam inventore, labore esse nobis incidunt ducimus doloribus odit quae!</p>
+        <!-- "learn more" link which will be converted to button on css -->
         <a class="mid-caret" href="#">Learn More <i class="fa-solid fa-caret-right"></i></a>
     </section>
     <section class="wrapper wrapper-4">
         <h2>Our Team</h2>
+        <!-- "team" class used to group sets of information to be aligned using grid function on css based on screen size -->
         <div class="team team-1">
             <img src="images/john.jpg" alt="John">    
         </div>
@@ -100,38 +110,46 @@
     </section>
     <section class="wrapper wrapper-5">
         <h2>Contact Us</h2>
-        <h3>Send us a message</h3>
-        <div class="message-box">
-            <!-- info and message input fields -->
-            <label for="fullname">Full Name</label><br>
-            <input type="text" id="fullname" name="fullname"><br>
-            <label for="email">Email</label><br>
-            <input type="text" id="email" name="email"><br>
-            <label for="message">Message</label><br>
-            <textarea id="message" name="message"></textarea>
+        <div class="message">
+                <h3>Send us a message</h3>
+            <!-- unique class for message input for isolated editing of input fields -->
+            <div class="message-input">
+                <!-- info and message input fields -->
+                <label for="fullname">Full Name</label><br>
+                <input type="text" id="fullname" name="fullname"><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div class="button">
+                <!-- send link which will be converted to button on css -->
+                <a href="#">SEND</a>
+            </div>
         </div>
-        <div class="button">
-            <!-- send link which will be converted to button on css -->
-            <a href="#">SEND</a>
+        <!-- structure of table which will be formatted on css for better spacing, span and defined cells -->
+        <div>
+            <h3>Hours of operation</h3>
+            <table style="width:100%">
+                <tr>
+                    <th>Days</th>
+                    <th>Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday-Friday</td>
+                    <td>9 AM - 6 AM</td>
+                </tr>
+                <tr>
+                    <td>Saturday-Sunday</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
         </div>
-        <h3>Hours of operation</h3>
-        <table style="width:100%">
-            <tr>
-                <th>Days</th>
-                <th>Hours</th>
-            </tr>
-            <tr>
-                <td>Monday-Friday</td>
-                <td>9 AM - 6 AM</td>
-            </tr>
-            <tr>
-                <td>Saturday-Sunday</td>
-                <td>Closed</td>
-            </tr>
-        </table>
-        <h3>Location</h3>
+        <div>
+            <h3>Location</h3>   
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11215.031376118053!2d-75.75311301064566!3d45.353700291910705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1649259637203!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11215.031376118053!2d-75.75311301064566!3d45.353700291910705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1649259637203!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
          <!-- copyright information -->
          <p><span>&copy;</span> Copyright Three Star Media, 2020</p>
